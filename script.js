@@ -2,15 +2,16 @@
 const profilePhoto = document.querySelector('.profile-photo');
 
 profilePhoto.addEventListener('click', () => {
-  // if (document.body.className == 'dark-mode') {
-  //   document.body.className = '';
-  // } else {
-  //   document.body.className = 'dark-mode';
-  // }
-  // DOM 요소에 지정한 클래스 값이 없으면 추가하고, 있으면 제거
-  document.body.classList.toggle('dark-mode');  
+    // if (document.body.className == 'dark-mode') {
+    //   document.body.className = '';
+    // } else {
+    //   document.body.className = 'dark-mode';
+    // }
+    // DOM 요소에 지정한 클래스 값이 없으면 추가하고, 있으면 제거
+    document.body.classList.toggle('dark-mode');  
 })
 
+/* 스크롤 모드 */
 /* 오늘의 운세 section 추가 */
 fetch("https://m.search.naver.com/p/csearch/content/apirender.nhn?where=nexearch&pkid=387&u2=20030430&q=생년월일+운세&u1=f&u3=solar&u4=12&_=1719518803829")
     .then((response) => response.json())  // 응답을 JSON으로 파싱
